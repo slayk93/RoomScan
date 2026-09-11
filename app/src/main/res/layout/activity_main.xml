@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#101214">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="RoomScan"
+            android:textColor="#F2F4F6"
+            android:textSize="32sp"
+            android:letterSpacing="-0.02" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="32dp"
+            android:text="Filme une pièce en avançant lentement. L'app reconstruit un nuage de points, exportable en 3D ou aplati en plan 2D."
+            android:textColor="#8E979F"
+            android:textSize="15sp"
+            android:lineSpacingExtra="4dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Taille de voxel"
+            android:textColor="#F2F4F6"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/voxelValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3 cm"
+            android:textColor="#5FB4E8"
+            android:textSize="13sp" />
+
+        <SeekBar
+            android:id="@+id/voxelSeek"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="9"
+            android:progress="2" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="Portée maximale"
+            android:textColor="#F2F4F6"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/depthValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5,0 m"
+            android:textColor="#5FB4E8"
+            android:textSize="13sp" />
+
+        <SeekBar
+            android:id="@+id/depthSeek"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="14"
+            android:progress="6" />
+
+        <Button
+            android:id="@+id/startBtn"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginTop="40dp"
+            android:text="Ouvrir le scanner"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/statusText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textColor="#8E979F"
+            android:textSize="13sp"
+            android:lineSpacingExtra="3dp" />
+    </LinearLayout>
+</ScrollView>
